@@ -24,7 +24,7 @@
     "classnames": "^2.2.6",
     "enzyme": "^3.7.0",
     "immutability-helper": "^2.8.1",
-    "jest": "^23.6.0",
+    "jest": "^24.7.1",
     "lodash": "^4.17.11",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -36,7 +36,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.4",
     "copy-webpack-plugin": "^4.5.4",
     "css-loader": "^1.0.0",
@@ -44,7 +44,7 @@
     "file-loader": "^2.0.0",
     "html-webpack-inline-source-plugin": "0.0.10",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.4",
+    "node-sass": "^4.11.0",
     "react-hot-loader": "^4.3.11",
     "react-test-renderer": "^16.5.2",
     "regenerator-runtime": "^0.12.1",
@@ -54,7 +54,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.3.1"
   },
   "jest": {
     "rootDir": "./src",
