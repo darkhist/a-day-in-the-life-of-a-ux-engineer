@@ -47,9 +47,13 @@ class EditPanel extends React.Component {
 		this.setState({ costError });
 	}
 
-	isValidItem = (item) => true
+	isValidItem = (item) => {
+    return item === '' || typeof item !== 'string' ? false : true;
+  }
 
-	isValidPrice = (price) => true
+	isValidPrice = (price) => {
+    return price === '' || isNaN(Number(price)) ? false : true;
+  }
 
 	selectItem = (selected) => (e) => {
 		this.setState({ itemInput: selected.name, costInput: selected.cost })
