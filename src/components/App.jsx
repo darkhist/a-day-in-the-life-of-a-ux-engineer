@@ -18,7 +18,11 @@ class App extends React.Component {
     this.setState({ items: newItems, itemSuggestions: '' });
   }
 
-  removeItem = (idx) => (e) => {}
+  removeItem = (idx) => (e) => {
+    const { items } = this.state;
+    const newItems = [...items.slice(0, idx), ...items.slice(idx + 1)]
+    this.setState({ items: newItems, itemSuggestions: '' });
+  }
 
   getSuggestions = (chars) => {
     const filter = nameFilter(chars, 5);
