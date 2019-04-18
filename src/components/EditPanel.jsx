@@ -2,7 +2,8 @@ import React from 'react';
 
 class EditPanel extends React.Component {
 	constructor(props) {
-		super(props);
+    super(props);
+    this.timeout = 200;
 		this.state = {
 			costInput: '',
 			itemInput: '',
@@ -27,8 +28,10 @@ class EditPanel extends React.Component {
 	}
 
 	getSuggestions = (e) => {
-		if (e.key.length === 1)
-			this.props.getSuggestions(e, this.state.itemInput);
+    if (this.timeout) clearTimeout(this.timeout);
+    this.timeout = setTimeout(() => {
+      this.props.getSuggestions(e, this.state.itemInput);
+    }, 200);
 	}
 
 	onItemBlur = () => {
